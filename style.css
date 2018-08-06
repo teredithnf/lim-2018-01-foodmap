@@ -1,5 +1,11 @@
 *{box-sizing: border-box}
-body {
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    /* background: #3e444c; */
+}
+.body {
     margin: 0%;
     padding: 0%;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -9,7 +15,7 @@ body {
     width: 100%;
     height: 100%;
     position: fixed;
-    top:40%;
+    top:0%;
     left:0;
     z-index: 1;
     background: #3e444c;
@@ -29,7 +35,7 @@ body {
     
 }
 .cerrar {
-    transform: translateY(-40%);
+    transform: translateY(-100%);
     transition: all 0.5s;  
 }
 .hiden {
@@ -43,6 +49,7 @@ body {
 	padding-top: 50%;
   width: 80%;
   margin: 0 auto;
+  border: 5px,white;
 }
 map {
 	position: absolute;
