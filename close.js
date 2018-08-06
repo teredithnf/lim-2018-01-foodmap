@@ -1,4 +1,7 @@
-const container = document.getElementsById('container');
+const container = document.getElementById('container');
+const body = document.getElementById('body');
 setTimeout(function(){
-    container.classlist.add('cerrar');
-},9000);
+    container.classList.add('cerrar');
+    body.classList.remove('hiden');
+    body.classList.add('show');
+},2000);
