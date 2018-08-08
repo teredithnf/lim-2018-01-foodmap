@@ -12,21 +12,36 @@
 </head>
 <body>
 
-        <div class="map-container screenSplash" id="container" >
-             <div class="preloader">
-                <div class="foodmap">FoodMap
-                </div>
+    <div class="map-container screenSplash" id="container">
+            <div class="foodmap">FoodMap
             </div>
         </div>
-        <h2 class="tittleHtml">Foodmap</h2>
-        <hr>
-        <div id="body" class="body hiden"></div> <!--hiden-->
-            <div id="mapCanvas" class="mapCanvas">
-            </div>   
+    </div>
+    <h2 class="tittleHtml">Foodmap</h2>
+    <hr>
+    <div id="body" class="body hiden"></div>
+        <div id="mapCanvas" class="mapCanvas">
+        </div>   
+    </div>
+    <div class="container h-100 mt-5">
+        <div class="row h-100 justify-content-center align-items-center">
+            <form>
+                <div class="form-group">
+                    <label for="seleccion">Selecciona</label>
+                        <select class="form-control" id="seleccion">
+                          <option>Mexicana</option>
+                          <option>Peruana</option>
+                          <option>Italiana</option>
+                          <option>Vegana</option>
+                          <option>Criolla</option>
+                          <option>Fast Food</option>
+                        </select>
+                </div>
+                <input type="text" name="txtRestaurante" id="txtRestaurante" class="form-control">
+                <input type="button" value="Buscar" class="form-control btn btn-success mt-4" id="btnBuscar">
+            </form>
         </div>
-        <div>
-           <input class="form-control mr-sm-2" id="mapSearch" type="search" placeholder="Search" aria-label="Search">
-        </div>
+    </div>
     
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?AIzaSyCdOF8gR4EUA95OFqRJw7aZxxrOdF_WbxI&libraries=places"></script>
     <script src="close.js"></script>

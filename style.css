@@ -7,12 +7,16 @@ body{
 }
 hr {
     border: 3px solid #666;
-     border-radius: 300px/10px;
-      height: 0px; text-align: center;
-      width: 80%;
-      color : white
-
+    border-radius: 300px/10px;
+    height: 0px; text-align: center;
+    width: 80%;
+    color : white
     }
+.tittleHtml{
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 200%
+}
 .body {
     margin: 0%;
     padding: 0%;
@@ -39,6 +43,7 @@ hr {
     color: #e05a21;
     font-size: 450%;
     text-align: center;
+    margin-top: 20%
     
 }
 .cerrar {
@@ -53,12 +58,17 @@ hr {
 }
 .mapCanvas{
 	position: relative;
-	padding-top: 50%;
-    width: 80%;
-   margin: 0 auto;
-   border: black, 5px;
-   border-style: solid;
+	padding-top: 30%;
+    width: 40%;
+    height: 10%;
+    margin: 0 auto;
+    border: black, 5px;
+    border-style: solid;
 }
+.container {
+    text-align: center;
+}
+
 /* .map {
 	position: absolute;
 	width: 100%;

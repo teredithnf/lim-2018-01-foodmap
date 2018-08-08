@@ -17,26 +17,12 @@ var marker = new google.maps.Marker({
 
 });
 
-var searchBox = new google.maps.places.SearchBox(document.getElementById('mapsearch'));
+const container = document.getElementById('container');
+const body = document.getElementById('body');
+setTimeout(function(){
+    container.classList.add('cerrar');
+    body.classList.remove('hiden');
+    body.classList.add('show');
+},2000);
 
-google.maps.event.addListener(searchBox, 'places_changed', function() {
-
-    var places = searchBox.getPlaces();
-
-    var bounds = new google.maps.LatLngBounds();
-    var i,place;
-    for(i=0; place=places[i];i++){
-        bounds.extend(place.geometry.location);
-        marker.setPosition(place.geometry.location);     
-    }
-    map.fitBounds(bounds);
-    map.setZoom(15);
-});
-
-// https://maps.googleapis.com/maps/api/place/findplacefromtext/output?parameters
-
-// https://maps.googleapis.com/maps/api/place/findplacefromtext/json?parameters
-
-// https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=mongolian%20grill&inputtype=textquery&fields=photos,formatted_address,name,opening_hours,rating&locationbias=circle:2000@47.6918452,-122.2226413&key=YOUR_API_KEY
-
-// https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=Museum%20of%20Contemporary%20Art%20Australia&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key=YOUR_API_KEY
+document.getElementById('seleccion').value;
