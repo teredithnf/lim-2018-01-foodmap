@@ -1,7 +1,7 @@
 *{box-sizing: border-box}
 body{
     margin: 0%;
-    padding: 0%;
+    padding-bottom: 40%;
     font-family: 'Open Sans Condensed', sans-serif;
     background: #3e444c;
 }
@@ -48,7 +48,7 @@ hr {
 }
 .cerrar {
     transform: translateY(-100%);
-    transition: all 0.5s;  
+    transition: all 0.1s;  
 }
 .hiden {
     display: none;
@@ -68,7 +68,26 @@ hr {
 .container {
     text-align: center;
 }
+.div-data{
+    border: 1px solid red;
+    width: 33.333%;
+    /* margin-right: 10px; */
+    text-align: center;
+    border-radius: 10px;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    float: left;
+}
+.div-data-text {
+    font-size: 85%;
+}
+.album {
+    min-height: 50rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: white;
 
+}
 /* .map {
 	position: absolute;
 	width: 100%;

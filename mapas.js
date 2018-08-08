@@ -25,4 +25,3 @@ setTimeout(function(){
     body.classList.add('show');
 },2000);
 
-document.getElementById('seleccion').value;

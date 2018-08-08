@@ -19,7 +19,7 @@
     </div>
     <h2 class="tittleHtml">Foodmap</h2>
     <hr>
-    <div id="body" class="body hiden"></div>
+    <div id="body" class="body hiden">
         <div id="mapCanvas" class="mapCanvas">
         </div>   
     </div>
@@ -29,22 +29,31 @@
                 <div class="form-group">
                     <label for="seleccion">Selecciona</label>
                         <select class="form-control" id="seleccion">
-                          <option>Mexicana</option>
-                          <option>Peruana</option>
-                          <option>Italiana</option>
-                          <option>Vegana</option>
-                          <option>Criolla</option>
-                          <option>Fast Food</option>
+                          <option value="Mexicana" selected="selected">Mexicana</option>
+                          <option value="Peruana">Peruana</option>
+                          <option value="Italiana">Italiana</option>
+                          <option value="Vegana">Vegana</option>
+                          <option value="Criolla">Criolla</option>
+                          <option value="Fast Food">Fast Food</option>
                         </select>
                 </div>
                 <input type="text" name="txtRestaurante" id="txtRestaurante" class="form-control">
                 <input type="button" value="Buscar" class="form-control btn btn-success mt-4" id="btnBuscar">
             </form>
+            
+        </div>
+        <div class="album text-muted">
+            <div class="container">
+                <div class="row" id="resultados" >
+
+                </div>
+            </div>
         </div>
     </div>
+
+    
     
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?AIzaSyCdOF8gR4EUA95OFqRJw7aZxxrOdF_WbxI&libraries=places"></script>
-    <script src="close.js"></script>
     <script src="main.js"></script>
     <script src="mapas.js"></script>
 </body>
